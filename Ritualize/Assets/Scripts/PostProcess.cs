@@ -27,7 +27,7 @@ public class PostProcess : MonoBehaviour
 			outlined = false;
 		} else 
 		{
-			meshRenderer.material.shader = Shader.Find("Outlined/OcclusionOutline");
+			meshRenderer.material.shader = Shader.Find("Outlined/Silhouetted Bumped Diffuse");
 			outlined = true;
 		}
 
