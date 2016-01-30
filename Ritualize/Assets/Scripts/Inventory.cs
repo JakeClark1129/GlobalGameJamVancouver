@@ -16,9 +16,11 @@ public enum Items
 	//Craftables
 	ElixerOfLight = 1 << 7,
 	SoulSnatcher = 1 << 8,
+	TinctureOfPain = 1 << 9,
+	SoundOfMadness = 1 << 10,
 }
 
 public class Inventory : MonoBehaviour 
 {
-	public Items inventory {get; private set;}
+	public Items inventory;
 }
