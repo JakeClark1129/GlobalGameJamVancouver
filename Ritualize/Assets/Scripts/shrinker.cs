@@ -1,16 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class shrinker : MonoBehaviour {
-
+public class Shrinker : MonoBehaviour 
+{
+	private ParticleSystem.ShapeModule shape;
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+		shape = this.GetComponent<ParticleSystem>().shape;
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		ParticleSystem.ShapeModule shape = this.GetComponent<ParticleSystem>().shape;
+	void Update () 
+	{
 		shape.radius -= Time.deltaTime;
 	}
 }
