@@ -5,9 +5,11 @@ public class PostProcess : MonoBehaviour
 {
 
 	private MeshRenderer meshRenderer;
+	private bool outlined;
 	// Use this for initialization
 	void Start () 
 	{
+		outlined = false;
 		meshRenderer = GetComponent<MeshRenderer> ();
 	}
 	
@@ -19,6 +21,15 @@ public class PostProcess : MonoBehaviour
 
 	public void ToggleOutline()
 	{
-		
+		if (outlined) 
+		{
+			meshRenderer.material.shader = Shader.Find("Diffuse");
+			outlined = false;
+		} else 
+		{
+			meshRenderer.material.shader = Shader.Find("Outlined/OcclusionOutline");
+			outlined = true;
+		}
+
 	}
 }

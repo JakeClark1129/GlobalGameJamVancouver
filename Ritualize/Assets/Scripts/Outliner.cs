@@ -20,19 +20,21 @@ public class Outliner : MonoBehaviour
 		Vector3 from = charCam.transform.position;
 		Vector3 to = charCam.transform.forward;
 		RaycastHit hit = new RaycastHit();
-		LayerMask mask = LayerMask.NameToLayer ("Interactable");
-		bool hits = Physics.Raycast (from, to,out hit ,1000, mask);
+		LayerMask mask = 1<<LayerMask.NameToLayer ("Interactable");
+		bool hits = Physics.Raycast (from, to,out hit ,10000, mask);
 
 		if (hits) 
 		{
-			
 			GameObject tempObj = hit.transform.gameObject;
 			if (tempObj != targetObject) 
 			{
-				targetObject.SendMessage ("ToggleOutline");
+				if (targetObject)
+				{
+					targetObject.SendMessage ("ToggleOutline");
+				}
 				targetObject = tempObj;
+				targetObject.SendMessage ("ToggleOutline");
 			}
-			targetObject.SendMessage ("ToggleOutline");
 
 		}
 		else

@@ -6,11 +6,14 @@ public class InputManager : MonoBehaviour
 
 	public float MouseSensitivityX;
 	public float MouseSensitivityY;
+	public float jumpSpeed;
+	public float moveSpeed;
 
 	private CharacterController controller;
 	private Transform charTransform;
 	private Camera charCam;
 	private  Outliner outliner;
+	//private Rigidbody rb;
 	// Use this for initialization
 	void Start () 
 	{
@@ -18,35 +21,32 @@ public class InputManager : MonoBehaviour
 		charTransform = GetComponent<Transform> ();
 		charCam = GetComponentInChildren<Camera> ();
 		outliner = GetComponent<Outliner> ();
+		//rb = GetComponent<Rigidbody> ();
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
+		Vector3 movement = new Vector3();
+		movement *= 0;
 
-		if (Input.GetKey (KeyCode.W)) 
-		{
-			controller.Move (charTransform.forward); 
-		}
-		if (Input.GetKey (KeyCode.S)) 
-		{
-			controller.Move (-charTransform.forward); 
-		}
 
-		if (Input.GetKey (KeyCode.D)) 
-		{
-			controller.Move (charTransform.right); 
-		}
-		if (Input.GetKey (KeyCode.A)) 
-		{
-			controller.Move (-charTransform.right); 
-		}
+		movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+		movement = transform.TransformDirection(movement);
+		movement *= moveSpeed;
+		if (Input.GetButton("Jump"))
+			movement.y = jumpSpeed;
+		
+
+		movement += Physics.gravity * Time.deltaTime * 10;
+		controller.Move(movement * Time.deltaTime);
 
 		if (Input.GetKey (KeyCode.E)) 
 		{
 			outliner.Interact(); 
 		}
 
+		//rb.MovePosition (movement);
 		float rotX = Input.GetAxis ("Mouse Y") * Time.deltaTime*100 * MouseSensitivityX;
 		float rotY = Input.GetAxis ("Mouse X") * Time.deltaTime*100 * MouseSensitivityX;
 		charCam.transform.Rotate(new Vector3 (-rotX, 0, 0));
