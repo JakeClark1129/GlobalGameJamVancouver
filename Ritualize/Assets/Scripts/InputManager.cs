@@ -4,16 +4,20 @@ using System.Collections;
 public class InputManager : MonoBehaviour 
 {
 
+	public float MouseSensitivityX;
+	public float MouseSensitivityY;
+
 	private CharacterController controller;
 	private Transform charTransform;
 	private Camera charCam;
-
+	private  Outliner outliner;
 	// Use this for initialization
 	void Start () 
 	{
 		controller = GetComponent<CharacterController> ();
 		charTransform = GetComponent<Transform> ();
-		charCam = GetComponent<Camera> ();
+		charCam = GetComponentInChildren<Camera> ();
+		outliner = GetComponent<Outliner> ();
 	}
 	
 	// Update is called once per frame
@@ -38,7 +42,15 @@ public class InputManager : MonoBehaviour
 			controller.Move (-charTransform.right); 
 		}
 
-		Vector3 mousePos = Input.mousePosition;
+		if (Input.GetKey (KeyCode.E)) 
+		{
+			outliner.Interact(); 
+		}
+
+		float rotX = Input.GetAxis ("Mouse Y") * Time.deltaTime*100 * MouseSensitivityX;
+		float rotY = Input.GetAxis ("Mouse X") * Time.deltaTime*100 * MouseSensitivityX;
+		charCam.transform.Rotate(new Vector3 (-rotX, 0, 0));
+		charTransform.transform.Rotate (new Vector3 (0, rotY, 0));
 
 	}
 }
