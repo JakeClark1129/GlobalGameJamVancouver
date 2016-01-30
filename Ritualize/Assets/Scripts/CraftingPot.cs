@@ -8,6 +8,7 @@ public class CraftingPot : MonoBehaviour
 
 	[SerializeField]
 	Craftable[] m_craftables;
+
 	void AddIngredient(Items ingredient)
 	{
 		m_Ingredients |= ingredient;

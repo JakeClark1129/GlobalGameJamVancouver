@@ -52,7 +52,7 @@ public class Outliner : MonoBehaviour
 	{
 		if (targetObject) 
 		{
-			//targetObject.GetComponent<InteractableObject> ().Interact(charRef);
+			targetObject.GetComponent<Interactable>().Interact(charRef);
 		}
 	}
 }

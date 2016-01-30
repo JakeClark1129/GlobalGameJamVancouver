@@ -1,20 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Collectable : MonoBehaviour 
+public class Collectable : Interactable
 {
 	public Items m_ItemType;
 
-	public void Interact(GameObject player)
+	public override void Interact(GameObject player)
 	{
-		Items inventory = player.GetComponent<Inventory>().inventory;
-		Items diff = m_ItemType & inventory;
+		Inventory inventory = player.GetComponent<Inventory>();
+		Items diff = m_ItemType & inventory.inventory;
 		if(diff == 0)//if this object is not already in their inventory
 		{
+			Debug.Log("Object Collected");
 			//AND the inventory is not full
 			//TODO: add this item to the inventory
-			inventory |= m_ItemType;
-			GameObject.Destroy(this);
+			inventory.inventory |= m_ItemType;
+			Destroy(this.gameObject);
 		}
 	}
 }
