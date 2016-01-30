@@ -13,7 +13,7 @@ public class Craftable : MonoBehaviour
 
 	public Items m_RequiredItems { get; private set; }
 
-	public bool Craft(ref Items inventory)
+	public bool Craft(Items inventory)
 	{
 		Items diff = inventory & m_RequiredItems;
 		if (diff == m_RequiredItems)

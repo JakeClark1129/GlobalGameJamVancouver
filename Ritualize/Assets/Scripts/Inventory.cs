@@ -3,7 +3,7 @@ using UnityEngine;
 
 public enum Items
 {
-    //Collectables
+    //Collectibles
     Herb = 1,
     Flower = 1 << 1,
     Root = 1 << 2,
@@ -12,14 +12,16 @@ public enum Items
     Stick = 1 << 5,
     Rock = 1 << 6,
 
-    //Craftables
-    ElixerOfLight = 1 << 7,
-    SoulSnatcher = 1 << 8,
+	//Craftibles
+	ElixerOfLight = 1 << 7,
+	SoulSnatcher = 1 << 8,
+	TinctureOfPain = 1 << 9,
+	SoundOfMadness = 1 << 10,
 }
 
 public class Inventory : MonoBehaviour 
 {
-    public Items inventory {get; private set;}
+    public Items inventory;
 
     public InventoryItem[] ItemData;
 
