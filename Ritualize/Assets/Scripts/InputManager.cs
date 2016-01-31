@@ -13,9 +13,13 @@ public class InputManager : MonoBehaviour
 	private Transform charTransform;
 	private Camera charCam;
 	private  Outliner outliner;
-	//private Rigidbody rb;
-	// Use this for initialization
-	void Start () 
+    //private Rigidbody rb;
+
+    public float CameraMinTilt = -45f;
+    public float CameraMaxTilt = 45f;
+    private float cameraRotateX = 0f;
+
+	private void Start()
 	{
 		controller = GetComponent<CharacterController> ();
 		charTransform = GetComponent<Transform> ();
@@ -24,8 +28,7 @@ public class InputManager : MonoBehaviour
 		//rb = GetComponent<Rigidbody> ();
 	}
 	
-	// Update is called once per frame
-	void Update () 
+	private void Update()
 	{
 		Vector3 movement = new Vector3();
 		movement *= 0;
@@ -47,10 +50,10 @@ public class InputManager : MonoBehaviour
 		}
 
 		//rb.MovePosition (movement);
-		float rotX = Input.GetAxis ("Mouse Y") * Time.deltaTime*100 * MouseSensitivityX;
+		float rotX = Input.GetAxis ("Mouse Y") * Time.deltaTime*100 * MouseSensitivityY;
 		float rotY = Input.GetAxis ("Mouse X") * Time.deltaTime*100 * MouseSensitivityX;
-		charCam.transform.Rotate(new Vector3 (-rotX, 0, 0));
+		cameraRotateX = Mathf.Clamp(cameraRotateX + rotX, CameraMinTilt, CameraMaxTilt);
+		charCam.transform.localEulerAngles = new Vector3 (-cameraRotateX, 0, 0);
 		charTransform.transform.Rotate (new Vector3 (0, rotY, 0));
-
 	}
 }
