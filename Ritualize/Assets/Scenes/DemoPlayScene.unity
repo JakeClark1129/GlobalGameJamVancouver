@@ -146,76 +146,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!1 &337829712
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 337829715}
-  - 218: {fileID: 337829714}
-  - 154: {fileID: 337829713}
-  m_Layer: 0
-  m_Name: Terrain
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!154 &337829713
-TerrainCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 337829712}
-  m_Material: {fileID: 0}
-  m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 076acf58f270640488372a0485849be5, type: 2}
-  m_EnableTreeColliders: 1
---- !u!218 &337829714
-Terrain:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 337829712}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_TerrainData: {fileID: 15600000, guid: 076acf58f270640488372a0485849be5, type: 2}
-  m_TreeDistance: 2000
-  m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
-  m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
-  m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 5
-  m_SplatMapDistance: 1000
-  m_HeightmapMaximumLOD: 0
-  m_CastShadows: 1
-  m_DrawHeightmap: 1
-  m_DrawTreesAndFoliage: 1
-  m_ReflectionProbeUsage: 1
-  m_MaterialType: 0
-  m_LegacySpecular:
-    serializedVersion: 2
-    rgba: 4286545791
-  m_LegacyShininess: 0.078125
-  m_MaterialTemplate: {fileID: 0}
-  m_BakeLightProbesForTrees: 1
-  m_ScaleInLightmap: 0.0512
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
---- !u!4 &337829715
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 337829712}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -150, y: 0, z: -150}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
 --- !u!1001 &359505490
 Prefab:
   m_ObjectHideFlags: 0
@@ -255,18 +185,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 19872972, guid: 7a3e44dca27076e43abe273d33c43554, type: 2}
-      propertyPath: ShapeModule.radius
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 19872972, guid: 7a3e44dca27076e43abe273d33c43554, type: 2}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 19872972, guid: 7a3e44dca27076e43abe273d33c43554, type: 2}
-      propertyPath: ShapeModule.type
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a3e44dca27076e43abe273d33c43554, type: 2}
   m_IsPrefabParent: 0
@@ -279,7 +197,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 433310, guid: 4e2364784a7afc540a00002921673eeb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -100
+      value: -150
       objectReference: {fileID: 0}
     - target: {fileID: 433310, guid: 4e2364784a7afc540a00002921673eeb, type: 2}
       propertyPath: m_LocalPosition.y
@@ -287,7 +205,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 433310, guid: 4e2364784a7afc540a00002921673eeb, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -100
+      value: -150
       objectReference: {fileID: 0}
     - target: {fileID: 433310, guid: 4e2364784a7afc540a00002921673eeb, type: 2}
       propertyPath: m_LocalRotation.x
@@ -307,7 +225,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 433310, guid: 4e2364784a7afc540a00002921673eeb, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 15448272, guid: 4e2364784a7afc540a00002921673eeb, type: 2}
+      propertyPath: m_TerrainData
+      value: 
+      objectReference: {fileID: 15600000, guid: 076acf58f270640488372a0485849be5,
+        type: 2}
+    - target: {fileID: 15448272, guid: 4e2364784a7afc540a00002921673eeb, type: 2}
+      propertyPath: m_EnableTreeColliders
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e2364784a7afc540a00002921673eeb, type: 2}
@@ -349,7 +276,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481058, guid: e21fd9ecd0d8d584a96762ff5c481cf7, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e21fd9ecd0d8d584a96762ff5c481cf7, type: 2}

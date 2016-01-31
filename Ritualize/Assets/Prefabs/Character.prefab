@@ -244,7 +244,7 @@ MonoBehaviour:
   MouseSensitivityY: 2
   jumpSpeed: 10
   moveSpeed: 10
-  CameraMinTilt: -45
+  CameraMinTilt: -75
   CameraMaxTilt: 45
 --- !u!124 &12479250
 Behaviour:
