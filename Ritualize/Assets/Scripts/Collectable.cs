@@ -20,8 +20,6 @@ public class Collectable : Interactable
 
             inventory.AddItem(m_ItemType);
             Destroy(this.gameObject);
-
-            // TODO: signal the UI inventory widget to update
 		}
 	}
 }

@@ -11,6 +11,7 @@ GameObject:
   - 222: {fileID: 22245210}
   - 114: {fileID: 11406022}
   - 114: {fileID: 11438648}
+  - 114: {fileID: 11478890}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -46,6 +47,7 @@ GameObject:
   - 222: {fileID: 22269358}
   - 114: {fileID: 11459626}
   - 114: {fileID: 11411062}
+  - 114: {fileID: 11456606}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -80,6 +82,7 @@ GameObject:
   - 222: {fileID: 22226942}
   - 114: {fileID: 11441514}
   - 114: {fileID: 11429274}
+  - 114: {fileID: 11494790}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -98,6 +101,7 @@ GameObject:
   - 222: {fileID: 22258436}
   - 114: {fileID: 11430716}
   - 114: {fileID: 11456172}
+  - 114: {fileID: 11445444}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -203,6 +207,7 @@ GameObject:
   - 222: {fileID: 22242336}
   - 114: {fileID: 11461736}
   - 114: {fileID: 11491950}
+  - 114: {fileID: 11410002}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -237,6 +242,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11410002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d787792fe052c4946b576943e33a722d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Caption: {fileID: 11457520}
+  Icon: {fileID: 0}
 --- !u!114 &11411062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -521,6 +539,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11445444
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d787792fe052c4946b576943e33a722d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Caption: {fileID: 11458154}
+  Icon: {fileID: 0}
 --- !u!114 &11453274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -578,6 +609,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &11456606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d787792fe052c4946b576943e33a722d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Caption: {fileID: 11422064}
+  Icon: {fileID: 0}
 --- !u!114 &11457520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -742,6 +786,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a6d10654e90fa2488fe5c892f430da6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Slots:
+  - {fileID: 11494790}
+  - {fileID: 11410002}
+  - {fileID: 11478890}
+  - {fileID: 11456606}
+  - {fileID: 11445444}
+--- !u!114 &11478890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d787792fe052c4946b576943e33a722d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Caption: {fileID: 11463238}
+  Icon: {fileID: 0}
 --- !u!114 &11491950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -783,6 +846,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &11494790
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d787792fe052c4946b576943e33a722d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Caption: {fileID: 11417472}
+  Icon: {fileID: 0}
 --- !u!222 &22208342
 CanvasRenderer:
   m_ObjectHideFlags: 1
