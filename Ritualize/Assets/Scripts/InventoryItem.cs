@@ -6,5 +6,5 @@ public class InventoryItem : ScriptableObject
 {
     public Items ID;
     public string Caption;
-    public Texture Icon;
+    public Sprite Icon;
 }

@@ -8,7 +8,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 464320}
-  m_Layer: 0
+  - 114: {fileID: 11483934}
+  - 65: {fileID: 6593524}
+  m_Layer: 8
   m_Name: Bark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +27,7 @@ GameObject:
   - 4: {fileID: 475054}
   - 33: {fileID: 3374758}
   - 23: {fileID: 2387864}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: bark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.0871453, y: 0.04, z: 1.5222754}
+  m_LocalPosition: {x: -0.68484926, y: -1.8244162, z: -3.117406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 475054}
@@ -90,6 +92,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147266}
   m_Mesh: {fileID: 4300000, guid: 3dadfb1bcf3aee748b6816a53ce31e55, type: 3}
+--- !u!65 &6593524
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143398}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.91, y: 0.18, z: 1.56}
+  m_Center: {x: 0, y: 0.15, z: 0}
+--- !u!114 &11483934
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4a3586b9c0dee84f8fbc22b487a074b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  m_ItemType: 16
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

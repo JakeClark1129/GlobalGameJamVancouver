@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 441454}
   - 33: {fileID: 3301062}
   - 23: {fileID: 2359948}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 457874}
-  m_Layer: 0
+  - 135: {fileID: 13521466}
+  - 114: {fileID: 11410176}
+  m_Layer: 8
   m_Name: Clover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 186490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2573586, y: 1.3230926e-16, z: 1.4913206}
+  m_LocalPosition: {x: -3.514636, y: -1.8644161, z: -3.1483607}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 441454}
@@ -90,6 +92,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152220}
   m_Mesh: {fileID: 4300000, guid: 5c85912d910a7b24c93f357147f3346c, type: 3}
+--- !u!114 &11410176
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 186490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4a3586b9c0dee84f8fbc22b487a074b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  m_ItemType: 128
+--- !u!135 &13521466
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 186490}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.25
+  m_Center: {x: 0, y: 0.33, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

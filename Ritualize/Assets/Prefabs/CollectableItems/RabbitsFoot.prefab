@@ -8,7 +8,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 438460}
-  m_Layer: 0
+  - 114: {fileID: 11428154}
+  - 135: {fileID: 13559148}
+  m_Layer: 8
   m_Name: RabbitsFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +27,7 @@ GameObject:
   - 4: {fileID: 444560}
   - 33: {fileID: 3365430}
   - 23: {fileID: 2312882}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: raggitfoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183654}
   m_LocalRotation: {x: -0.009266886, y: -0.01451729, z: -0.0028360449, w: 0.99984765}
-  m_LocalPosition: {x: -0.01, y: 0.05, z: 1.14}
+  m_LocalPosition: {x: -4.781995, y: -1.8144162, z: -3.4996815}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 444560}
@@ -90,6 +92,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 185270}
   m_Mesh: {fileID: 4300000, guid: 0ce0d41d1c10f82429037b4d8245349c, type: 3}
+--- !u!114 &11428154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4a3586b9c0dee84f8fbc22b487a074b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  m_ItemType: 256
+--- !u!135 &13559148
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183654}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0.16, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -30,10 +30,10 @@ public class Outliner : MonoBehaviour
 			{
 				if (targetObject)
 				{
-					targetObject.SendMessage ("ToggleOutline");
+					targetObject.GetComponentInChildren<PostProcess>().ToggleOutline();
 				}
 				targetObject = tempObj;
-				targetObject.SendMessage ("ToggleOutline");
+				targetObject.GetComponentInChildren<PostProcess>().ToggleOutline();//SendMessage("ToggleOutline");
 			}
 
 		}
@@ -41,7 +41,7 @@ public class Outliner : MonoBehaviour
 		{
 			if (targetObject) 
 			{
-				targetObject.SendMessage ("ToggleOutline");
+				targetObject.GetComponentInChildren<PostProcess>().ToggleOutline(); //targetObject.SendMessage("ToggleOutline");
 				targetObject = null;
 			}
 		
@@ -52,6 +52,7 @@ public class Outliner : MonoBehaviour
 	{
 		if (targetObject) 
 		{
+			Debug.Log("Target Object: " + targetObject);
 			targetObject.GetComponent<Interactable>().Interact(charRef);
 		}
 	}
