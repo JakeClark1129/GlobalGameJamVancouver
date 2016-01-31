@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WidgetRoot: {fileID: 121694}
   Caption: {fileID: 11472808}
+  DisplayOffset: {x: 0, y: 34, z: 0}
   MouseAwaySquared: 1600
 --- !u!114 &11430038
 MonoBehaviour:

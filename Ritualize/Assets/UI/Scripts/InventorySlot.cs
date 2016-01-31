@@ -56,7 +56,8 @@ public class InventorySlot : MonoBehaviour
 
     public void HandlePointerEnter()
     {
-        if (Rollover != null)
+        if (Rollover != null &&
+            Item != null)
         {
             Rollover.ShowCaption(Item.RolloverCaption);
         }

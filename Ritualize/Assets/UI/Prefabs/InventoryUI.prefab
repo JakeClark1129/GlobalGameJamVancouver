@@ -345,6 +345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Caption: {fileID: 11457520}
   Icon: {fileID: 11497224}
+  Rollover: {fileID: 0}
 --- !u!114 &11411062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -745,6 +746,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11494790}
+          m_MethodName: HandlePointerEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
 --- !u!114 &11445444
 MonoBehaviour:
@@ -759,6 +777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Caption: {fileID: 11458154}
   Icon: {fileID: 11434136}
+  Rollover: {fileID: 0}
 --- !u!114 &11452750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -859,6 +878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Caption: {fileID: 11422064}
   Icon: {fileID: 11465288}
+  Rollover: {fileID: 0}
 --- !u!114 &11457520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1097,6 +1117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Caption: {fileID: 11463238}
   Icon: {fileID: 11471272}
+  Rollover: {fileID: 0}
 --- !u!114 &11479774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1208,6 +1229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Caption: {fileID: 11417472}
   Icon: {fileID: 11479774}
+  Rollover: {fileID: 0}
 --- !u!114 &11497224
 MonoBehaviour:
   m_ObjectHideFlags: 1

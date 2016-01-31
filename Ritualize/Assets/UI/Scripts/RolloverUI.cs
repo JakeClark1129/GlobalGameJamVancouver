@@ -6,6 +6,7 @@ public class RolloverUI : MonoBehaviour
 {
     public GameObject WidgetRoot;
     public Text Caption;
+    public Vector3 DisplayOffset = Vector3.zero;
     public float MouseAwaySquared = 1600;
 
     private RectTransform _RectTransform;
@@ -20,7 +21,7 @@ public class RolloverUI : MonoBehaviour
 
         WidgetRoot.gameObject.SetActive(true);
         Caption.text = caption;
-        _RectTransform.anchoredPosition = Input.mousePosition;
+        _RectTransform.anchoredPosition = Input.mousePosition + DisplayOffset;
     }
 
     private void Start()
@@ -30,7 +31,8 @@ public class RolloverUI : MonoBehaviour
 
     private void Update()
     {
-        Vector3 mouseDiff = new Vector2(Input.mousePosition.x, Input.mousePosition.y) - _RectTransform.anchoredPosition;
+        Vector3 mousePos = Input.mousePosition + DisplayOffset;
+        Vector2 mouseDiff = new Vector2(mousePos.x, mousePos.y) - _RectTransform.anchoredPosition;
         if (mouseDiff.sqrMagnitude > MouseAwaySquared)
         {
             WidgetRoot.gameObject.SetActive(false);
