@@ -12,6 +12,12 @@ public class RolloverUI : MonoBehaviour
 
     public void ShowCaption(string caption)
     {
+        if (caption.Length < 1)
+        {
+            WidgetRoot.gameObject.SetActive(false);
+            return;
+        }
+
         WidgetRoot.gameObject.SetActive(true);
         Caption.text = caption;
         _RectTransform.anchoredPosition = Input.mousePosition;

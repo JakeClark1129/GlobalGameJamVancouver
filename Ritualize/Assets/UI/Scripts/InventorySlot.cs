@@ -58,7 +58,7 @@ public class InventorySlot : MonoBehaviour
     {
         if (Rollover != null)
         {
-            Rollover.ShowCaption("testing");
+            Rollover.ShowCaption(Item.RolloverCaption);
         }
     }
 }
