@@ -35,7 +35,8 @@ public class DeathController : MonoBehaviour
 			agent.Move (newPos);
 			agent.SetDestination (charTrans.position);
 
-		} else if (!teleported) 
+		}
+		else if (!teleported) 
 		{
 			FXManager.Instance.Spawn ("DeathDeath", transform.position, transform.rotation);
 			agent.Move (new Vector3 (1, 0, 1) * spawnRadius);
