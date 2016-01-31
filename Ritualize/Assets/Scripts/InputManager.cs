@@ -51,6 +51,11 @@ public class InputManager : MonoBehaviour
 
 		controller.Move(movement * Time.deltaTime);
 
+		if (Input.GetKeyDown(KeyCode.Escape) )
+		{
+			Application.Quit();
+		}
+
 		if (Input.GetKeyDown(KeyCode.E) ||
             Input.GetMouseButtonDown(0) )
 		{

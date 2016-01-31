@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Collectable : Interactable
 {
-	public Items m_ItemType;
+    public Items m_ItemType;
 
     private bool HasItem(Inventory inventory, Items item)
     {
@@ -11,8 +11,8 @@ public class Collectable : Interactable
     }
 
     public override void Interact(GameObject player)
-	{
-		Inventory inventory = player.GetComponent<Inventory>();
+    {
+        Inventory inventory = player.GetComponent<Inventory>();
         if (!inventory.HasItem(m_ItemType) &&
             !inventory.IsFull())
         {
@@ -20,8 +20,6 @@ public class Collectable : Interactable
 
             inventory.AddItem(m_ItemType);
             Destroy(this.gameObject);
-
-            // TODO: signal the UI inventory widget to update
-		}
-	}
+        }
+    }
 }
