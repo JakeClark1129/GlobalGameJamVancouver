@@ -11,8 +11,8 @@ GameObject:
   - 222: {fileID: 22245210}
   - 114: {fileID: 11406022}
   - 114: {fileID: 11438648}
-  - 114: {fileID: 11478890}
   - 114: {fileID: 11435062}
+  - 114: {fileID: 11459644}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -65,8 +65,8 @@ GameObject:
   - 222: {fileID: 22269358}
   - 114: {fileID: 11459626}
   - 114: {fileID: 11411062}
-  - 114: {fileID: 11456606}
   - 114: {fileID: 11414642}
+  - 114: {fileID: 11474680}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -101,8 +101,8 @@ GameObject:
   - 222: {fileID: 22226942}
   - 114: {fileID: 11441514}
   - 114: {fileID: 11429274}
-  - 114: {fileID: 11494790}
   - 114: {fileID: 11442070}
+  - 114: {fileID: 11422826}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -121,8 +121,8 @@ GameObject:
   - 222: {fileID: 22258436}
   - 114: {fileID: 11430716}
   - 114: {fileID: 11456172}
-  - 114: {fileID: 11445444}
   - 114: {fileID: 11481332}
+  - 114: {fileID: 11415730}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -158,7 +158,7 @@ GameObject:
   - 223: {fileID: 22324936}
   - 114: {fileID: 11434520}
   - 114: {fileID: 11453274}
-  - 114: {fileID: 11476914}
+  - 114: {fileID: 11477030}
   m_Layer: 5
   m_Name: InventoryUI
   m_TagString: Untagged
@@ -296,8 +296,8 @@ GameObject:
   - 222: {fileID: 22242336}
   - 114: {fileID: 11461736}
   - 114: {fileID: 11491950}
-  - 114: {fileID: 11410002}
   - 114: {fileID: 11452750}
+  - 114: {fileID: 11459320}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -332,20 +332,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &11410002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 195650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d787792fe052c4946b576943e33a722d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Caption: {fileID: 11457520}
-  Icon: {fileID: 11497224}
-  Rollover: {fileID: 0}
 --- !u!114 &11411062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -403,11 +389,11 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11476914}
+        - m_Target: {fileID: 11477030}
           m_MethodName: HandleBeginDrag
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11456606}
+            m_ObjectArgument: {fileID: 11474680}
             m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -417,6 +403,21 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &11415730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0559cacaee94079438ee3f12fe39fb73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Caption: {fileID: 11458154}
+  Icon: {fileID: 11434136}
+  EmptyCaption: Empty
+  Rollover: {fileID: 0}
 --- !u!114 &11417472
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -483,6 +484,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Empty
+--- !u!114 &11422826
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0559cacaee94079438ee3f12fe39fb73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Caption: {fileID: 11417472}
+  Icon: {fileID: 11479774}
+  EmptyCaption: Empty
+  Rollover: {fileID: 0}
 --- !u!114 &11425772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -635,11 +651,11 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11476914}
+        - m_Target: {fileID: 11477030}
           m_MethodName: HandleBeginDrag
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11478890}
+            m_ObjectArgument: {fileID: 11459644}
             m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -733,11 +749,11 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11476914}
+        - m_Target: {fileID: 11477030}
           m_MethodName: HandleBeginDrag
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11494790}
+            m_ObjectArgument: {fileID: 11422826}
             m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -746,38 +762,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 11494790}
-          m_MethodName: HandlePointerEnter
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
---- !u!114 &11445444
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d787792fe052c4946b576943e33a722d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Caption: {fileID: 11458154}
-  Icon: {fileID: 11434136}
-  Rollover: {fileID: 0}
 --- !u!114 &11452750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -794,11 +779,11 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11476914}
+        - m_Target: {fileID: 11477030}
           m_MethodName: HandleBeginDrag
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11410002}
+            m_ObjectArgument: {fileID: 11459320}
             m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -865,20 +850,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &11456606
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d787792fe052c4946b576943e33a722d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Caption: {fileID: 11422064}
-  Icon: {fileID: 11465288}
-  Rollover: {fileID: 0}
 --- !u!114 &11457520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -945,6 +916,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Empty
+--- !u!114 &11459320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0559cacaee94079438ee3f12fe39fb73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Caption: {fileID: 11457520}
+  Icon: {fileID: 11497224}
+  EmptyCaption: Empty
+  Rollover: {fileID: 0}
 --- !u!114 &11459626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -972,6 +958,21 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11459644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0559cacaee94079438ee3f12fe39fb73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Caption: {fileID: 11463238}
+  Icon: {fileID: 11471272}
+  EmptyCaption: Empty
+  Rollover: {fileID: 0}
 --- !u!114 &11461736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1086,7 +1087,22 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &11476914
+--- !u!114 &11474680
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0559cacaee94079438ee3f12fe39fb73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Caption: {fileID: 11422064}
+  Icon: {fileID: 11465288}
+  EmptyCaption: Empty
+  Rollover: {fileID: 0}
+--- !u!114 &11477030
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1094,30 +1110,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 143998}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a6d10654e90fa2488fe5c892f430da6, type: 3}
+  m_Script: {fileID: 11500000, guid: a00b3542d80914f4a94057adb251bf34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Slots:
-  - {fileID: 11494790}
-  - {fileID: 11410002}
-  - {fileID: 11478890}
-  - {fileID: 11456606}
-  - {fileID: 11445444}
+  - {fileID: 11422826}
+  - {fileID: 11459320}
+  - {fileID: 11459644}
+  - {fileID: 11474680}
+  - {fileID: 11415730}
   SelectedItem: {fileID: 0}
---- !u!114 &11478890
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 104950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d787792fe052c4946b576943e33a722d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Caption: {fileID: 11463238}
-  Icon: {fileID: 11471272}
-  Rollover: {fileID: 0}
 --- !u!114 &11479774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1161,11 +1163,11 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11476914}
+        - m_Target: {fileID: 11477030}
           m_MethodName: HandleBeginDrag
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11445444}
+            m_ObjectArgument: {fileID: 11415730}
             m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -1216,20 +1218,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &11494790
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d787792fe052c4946b576943e33a722d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Caption: {fileID: 11417472}
-  Icon: {fileID: 11479774}
-  Rollover: {fileID: 0}
 --- !u!114 &11497224
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1521,8 +1509,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 22467296}
   - {fileID: 22483628}
+  - {fileID: 22467296}
   m_Father: {fileID: 22406652}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
@@ -1560,7 +1548,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22455930}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1613,7 +1601,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22455930}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}

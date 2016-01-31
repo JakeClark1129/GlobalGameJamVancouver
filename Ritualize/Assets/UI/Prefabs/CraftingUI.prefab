@@ -45,8 +45,8 @@ GameObject:
   - 222: {fileID: 22269596}
   - 114: {fileID: 11414102}
   - 114: {fileID: 11494270}
-  - 114: {fileID: 11485606}
   - 114: {fileID: 11465708}
+  - 114: {fileID: 11435282}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -65,8 +65,8 @@ GameObject:
   - 222: {fileID: 22201036}
   - 114: {fileID: 11438302}
   - 114: {fileID: 11459804}
-  - 114: {fileID: 11457318}
   - 114: {fileID: 11495572}
+  - 114: {fileID: 11410988}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -119,8 +119,8 @@ GameObject:
   - 222: {fileID: 22267120}
   - 114: {fileID: 11464260}
   - 114: {fileID: 11437380}
-  - 114: {fileID: 11448314}
   - 114: {fileID: 11461552}
+  - 114: {fileID: 11489868}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -139,14 +139,14 @@ GameObject:
   - 223: {fileID: 22355514}
   - 114: {fileID: 11479818}
   - 114: {fileID: 11444122}
-  - 114: {fileID: 11406330}
+  - 114: {fileID: 11436358}
   m_Layer: 5
   m_Name: CraftingUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &161382
 GameObject:
   m_ObjectHideFlags: 1
@@ -158,8 +158,8 @@ GameObject:
   - 222: {fileID: 22276918}
   - 114: {fileID: 11403352}
   - 114: {fileID: 11437250}
-  - 114: {fileID: 11464116}
   - 114: {fileID: 11440200}
+  - 114: {fileID: 11445954}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -279,20 +279,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Empty
---- !u!114 &11406330
+--- !u!114 &11410988
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157880}
+  m_GameObject: {fileID: 129966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55d9d1de34812a2479d0761644331d61, type: 3}
+  m_Script: {fileID: 11500000, guid: 0559cacaee94079438ee3f12fe39fb73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Inventory: {fileID: 0}
-  m_CraftingPot: {fileID: 0}
-  Slots: []
+  Caption: {fileID: 0}
+  Icon: {fileID: 0}
+  EmptyCaption: Empty
+  Rollover: {fileID: 0}
 --- !u!114 &11414102
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -347,6 +348,39 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11435282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0559cacaee94079438ee3f12fe39fb73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Caption: {fileID: 0}
+  Icon: {fileID: 0}
+  EmptyCaption: Empty
+  Rollover: {fileID: 0}
+--- !u!114 &11436358
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87bb1f256391c1d40b95c7c071f281fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Inventory: {fileID: 0}
+  m_CraftingPot: {fileID: 0}
+  Slots:
+  - {fileID: 11410988}
+  - {fileID: 11435282}
+  - {fileID: 11489868}
+  - {fileID: 11445954}
 --- !u!114 &11437250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -472,11 +506,11 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11406330}
+        - m_Target: {fileID: 11436358}
           m_MethodName: HandleDrop
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11464116}
+            m_ObjectArgument: {fileID: 11445954}
             m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -489,11 +523,11 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11406330}
+        - m_Target: {fileID: 11436358}
           m_MethodName: HandleClick
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11464116}
+            m_ObjectArgument: {fileID: 11445954}
             m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -585,19 +619,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &11448314
+--- !u!114 &11445954
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147432}
+  m_GameObject: {fileID: 161382}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d787792fe052c4946b576943e33a722d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0559cacaee94079438ee3f12fe39fb73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Caption: {fileID: 11455064}
+  Caption: {fileID: 0}
   Icon: {fileID: 0}
+  EmptyCaption: Empty
+  Rollover: {fileID: 0}
 --- !u!114 &11450350
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -651,19 +687,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Empty
---- !u!114 &11457318
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 129966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d787792fe052c4946b576943e33a722d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Caption: {fileID: 11440498}
-  Icon: {fileID: 0}
 --- !u!114 &11457490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -754,11 +777,11 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11406330}
+        - m_Target: {fileID: 11436358}
           m_MethodName: HandleDrop
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11448314}
+            m_ObjectArgument: {fileID: 11489868}
             m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -771,11 +794,11 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11406330}
+        - m_Target: {fileID: 11436358}
           m_MethodName: HandleClick
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11448314}
+            m_ObjectArgument: {fileID: 11489868}
             m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -785,19 +808,6 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
---- !u!114 &11464116
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 161382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d787792fe052c4946b576943e33a722d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Caption: {fileID: 11457490}
-  Icon: {fileID: 0}
 --- !u!114 &11464260
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -841,11 +851,11 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11406330}
+        - m_Target: {fileID: 11436358}
           m_MethodName: HandleDrop
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11485606}
+            m_ObjectArgument: {fileID: 11435282}
             m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -858,11 +868,11 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11406330}
+        - m_Target: {fileID: 11436358}
           m_MethodName: HandleClick
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11485606}
+            m_ObjectArgument: {fileID: 11435282}
             m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -893,19 +903,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &11485606
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d787792fe052c4946b576943e33a722d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Caption: {fileID: 11403402}
-  Icon: {fileID: 0}
 --- !u!114 &11487006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -922,7 +919,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11406330}
+        - m_Target: {fileID: 11436358}
           m_MethodName: Craft
           m_Mode: 1
           m_Arguments:
@@ -936,6 +933,21 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &11489868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0559cacaee94079438ee3f12fe39fb73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Caption: {fileID: 0}
+  Icon: {fileID: 0}
+  EmptyCaption: Empty
+  Rollover: {fileID: 0}
 --- !u!114 &11491792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1034,11 +1046,11 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11406330}
+        - m_Target: {fileID: 11436358}
           m_MethodName: HandleDrop
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11457318}
+            m_ObjectArgument: {fileID: 11410988}
             m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -1051,11 +1063,11 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11406330}
+        - m_Target: {fileID: 11436358}
           m_MethodName: HandleClick
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11457318}
+            m_ObjectArgument: {fileID: 11410988}
             m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -1173,10 +1185,10 @@ RectTransform:
   - {fileID: 22472992}
   m_Father: {fileID: 22433612}
   m_RootOrder: 1
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22426736
 RectTransform:
@@ -1266,10 +1278,10 @@ RectTransform:
   - {fileID: 22405598}
   m_Father: {fileID: 22433612}
   m_RootOrder: 2
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 250, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22472992
 RectTransform:
@@ -1301,10 +1313,10 @@ RectTransform:
   - {fileID: 22438554}
   m_Father: {fileID: 22433612}
   m_RootOrder: 3
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 350, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22496276
 RectTransform:
@@ -1353,10 +1365,10 @@ RectTransform:
   - {fileID: 22496276}
   m_Father: {fileID: 22433612}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &100100000
 Prefab:

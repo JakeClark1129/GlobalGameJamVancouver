@@ -26,7 +26,7 @@ GameObject:
   - 223: {fileID: 22339706}
   - 114: {fileID: 11430038}
   - 114: {fileID: 11411638}
-  - 114: {fileID: 11413870}
+  - 114: {fileID: 11431448}
   m_Layer: 5
   m_Name: RolloverUI
   m_TagString: Untagged
@@ -111,21 +111,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &11413870
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 139224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1859bbb7c853aef4ca1184283deb57bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WidgetRoot: {fileID: 121694}
-  Caption: {fileID: 11472808}
-  DisplayOffset: {x: 0, y: 34, z: 0}
-  MouseAwaySquared: 1600
 --- !u!114 &11430038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -147,6 +132,21 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &11431448
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac8b052f544b044e90cfb4c5bcbd3ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WidgetRoot: {fileID: 121694}
+  Caption: {fileID: 11472808}
+  DisplayOffset: {x: 0, y: 0, z: 0}
+  MouseAwaySquared: 1600
 --- !u!114 &11472808
 MonoBehaviour:
   m_ObjectHideFlags: 1
