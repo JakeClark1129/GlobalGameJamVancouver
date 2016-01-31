@@ -33,7 +33,7 @@ public class PostProcess : MonoBehaviour
 		else 
 		{
 			meshRenderer.material.shader = Shader.Find("Standard");
-			////meshRenderer.material.SetInt ("_Mode",1 );
+			meshRenderer.material.SetInt ("_Mode",1 );
 			//meshRenderer.material.SetColor ("_OutlineColor", Color.red);
 			//meshRenderer.material.SetFloat ("_Outline", 0.05f);
 			outlined = true;
