@@ -27,6 +27,7 @@ GameObject:
   - 4: {fileID: 475054}
   - 33: {fileID: 3374758}
   - 23: {fileID: 2387864}
+  - 114: {fileID: 11461712}
   m_Layer: 8
   m_Name: bark
   m_TagString: Untagged
@@ -41,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.68484926, y: -1.8244162, z: -3.117406}
+  m_LocalPosition: {x: 38.165207, y: 3.9627514, z: 168.48228}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 475054}
@@ -104,6 +105,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.91, y: 0.18, z: 1.56}
   m_Center: {x: 0, y: 0.15, z: 0}
+--- !u!114 &11461712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71aeacdbf24b9fb4b8318da613520927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11483934
 MonoBehaviour:
   m_ObjectHideFlags: 1

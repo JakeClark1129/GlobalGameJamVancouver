@@ -27,6 +27,7 @@ GameObject:
   - 4: {fileID: 486196}
   - 33: {fileID: 3356678}
   - 23: {fileID: 2338358}
+  - 114: {fileID: 11430418}
   m_Layer: 8
   m_Name: moss
   m_TagString: Untagged
@@ -104,6 +105,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.76, y: 0.08, z: 1.37}
   m_Center: {x: -0.15, y: 0.12, z: -0.14}
+--- !u!114 &11430418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 174122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71aeacdbf24b9fb4b8318da613520927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11458728
 MonoBehaviour:
   m_ObjectHideFlags: 1

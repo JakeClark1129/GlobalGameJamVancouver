@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 499230}
   - 33: {fileID: 3320704}
   - 23: {fileID: 2360008}
+  - 114: {fileID: 11415970}
   m_Layer: 8
   m_Name: charcoal
   m_TagString: Untagged
@@ -104,6 +105,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.25, y: 0.5, z: 1.25}
   m_Center: {x: 0, y: 0.3, z: 0}
+--- !u!114 &11415970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71aeacdbf24b9fb4b8318da613520927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11488698
 MonoBehaviour:
   m_ObjectHideFlags: 1

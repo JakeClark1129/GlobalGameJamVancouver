@@ -26,7 +26,7 @@ public class PostProcess : MonoBehaviour
 	{
 		if (outlined) 
 		{
-			meshRenderer.material.shader = Shader.Find("Diffuse");
+			meshRenderer.material.shader = Shader.Find("Legacy Shaders/Transparent/Cutout/Diffuse");
 			meshRenderer.material.SetInt ("_Mode",1 );
 			outlined = false;
 		} else 
