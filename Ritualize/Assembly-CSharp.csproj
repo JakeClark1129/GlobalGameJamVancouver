@@ -48,6 +48,8 @@
      <Compile Include="Assets\Scripts\Collectable.cs" />
      <Compile Include="Assets\Scripts\Craftable.cs" />
      <Compile Include="Assets\Scripts\CraftingPot.cs" />
+     <Compile Include="Assets\Scripts\CraftingPotInteractable.cs" />
+     <Compile Include="Assets\Scripts\DeathCol.cs" />
      <Compile Include="Assets\Scripts\DeathController.cs" />
      <Compile Include="Assets\Scripts\FXManager.cs" />
      <Compile Include="Assets\Scripts\InputManager.cs" />
@@ -56,14 +58,17 @@
      <Compile Include="Assets\Scripts\InventoryItem.cs" />
      <Compile Include="Assets\Scripts\Outliner.cs" />
      <Compile Include="Assets\Scripts\PostProcess.cs" />
+     <Compile Include="Assets\Scripts\RecipeInteractable.cs" />
      <Compile Include="Assets\Scripts\RitualCircle.cs" />
      <Compile Include="Assets\Scripts\Shrinker.cs" />
+     <Compile Include="Assets\Scripts\fx.cs" />
      <Compile Include="Assets\UI\Scripts\AlchemyCircleUI.cs" />
      <Compile Include="Assets\UI\Scripts\CraftingUI.cs" />
      <Compile Include="Assets\UI\Scripts\InventorySlot.cs" />
      <Compile Include="Assets\UI\Scripts\InventoryUI.cs" />
      <Compile Include="Assets\UI\Scripts\RolloverUI.cs" />
      <None Include="Assets\Shaders\OutlineBumped.shader" />
+     <None Include="Assets\Shaders\ExampleRim.shader" />
      <None Include="Assets\Shaders\OutlineOcclusion.shader" />
      <None Include="Assets\Shaders\OutlineDiffuse.shader" />
      <None Include="Assets\Models\DeathDemon\READ ME.txt" />
