@@ -22,18 +22,27 @@ public class Outliner : MonoBehaviour
 		RaycastHit hit = new RaycastHit();
 		LayerMask mask = 1<<LayerMask.NameToLayer ("Interactable");
 		bool hits = Physics.Raycast (from, to,out hit ,400, mask);
-
+		PostProcess temPost;
 		if (hits) 
 		{
+			
 			GameObject tempObj = hit.transform.gameObject;
 			if (tempObj != targetObject) 
 			{
 				if (targetObject)
 				{
-					targetObject.GetComponentInChildren<PostProcess>().ToggleOutline();
+					temPost = targetObject.GetComponentInChildren<PostProcess>(); //targetObject.SendMessage("ToggleOutline");
+					if (temPost) 
+					{
+						temPost.ToggleOutline ();
+					}
 				}
 				targetObject = tempObj;
-				targetObject.GetComponentInChildren<PostProcess>().ToggleOutline();//SendMessage("ToggleOutline");
+				temPost = targetObject.GetComponentInChildren<PostProcess>(); //targetObject.SendMessage("ToggleOutline");
+				if (temPost) 
+				{
+					temPost.ToggleOutline ();
+				}
 			}
 
 		}
@@ -41,7 +50,11 @@ public class Outliner : MonoBehaviour
 		{
 			if (targetObject) 
 			{
-				targetObject.GetComponentInChildren<PostProcess>().ToggleOutline(); //targetObject.SendMessage("ToggleOutline");
+				temPost = targetObject.GetComponentInChildren<PostProcess>(); //targetObject.SendMessage("ToggleOutline");
+				if (temPost) 
+				{
+					temPost.ToggleOutline ();
+				}
 				targetObject = null;
 			}
 		
