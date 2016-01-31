@@ -3,20 +3,23 @@ using UnityEngine;
 
 public enum Items
 {
-    //Collectibles
-    Herb = 1,
-    Flower = 1 << 1,
-    Root = 1 << 2,
-    Charcoal = 1 << 3,
-    Jar = 1 << 4,
-    Stick = 1 << 5,
-    Rock = 1 << 6,
+	//Collectables
+	NightShade = 1,
+	Flower = 1 << 1,
+	Root = 1 << 2,
+	Charcoal = 1 << 3,
+	Bark = 1 << 4,
+	Bone = 1 << 5,
+	Moss = 1 << 6,
+	FourLeafClover = 1 << 7,
+	RabitsFoot = 1 << 8,
 
-	//Craftibles
-	ElixerOfLight = 1 << 7,
-	SoulSnatcher = 1 << 8,
-	TinctureOfPain = 1 << 9,
-	SoundOfMadness = 1 << 10,
+	//Craftables
+	ElixerOfLight = 1 << 9,
+	SoulSnatcher = 1 << 10,
+	TinctureOfPain = 1 << 11,
+	SoundOfMadness = 1 << 12,
+	InfusionOfDarkness = 1 << 13,
 }
 
 public class Inventory : MonoBehaviour 
