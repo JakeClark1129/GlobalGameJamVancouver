@@ -931,6 +931,7 @@ MonoBehaviour:
   - {fileID: 11478890}
   - {fileID: 11456606}
   - {fileID: 11445444}
+  SelectedItem: {fileID: 0}
 --- !u!114 &11478890
 MonoBehaviour:
   m_ObjectHideFlags: 1

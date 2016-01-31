@@ -9,11 +9,7 @@ public class InventoryUI : MonoBehaviour
 
     private int _NextSlotIndex = 0;
 
-    public InventoryItem SelectedItem
-    {
-        get;
-        private set;
-    }
+    public InventoryItem SelectedItem;
 
     public void HandleInventoryUpdated(Inventory inventory)
     {

@@ -290,6 +290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Inventory: {fileID: 0}
+  Slots: []
 --- !u!114 &11414102
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -471,6 +472,23 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 11406330}
           m_MethodName: HandleDrop
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11464116}
+            m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11406330}
+          m_MethodName: HandleClick
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 11464116}
@@ -747,6 +765,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11406330}
+          m_MethodName: HandleClick
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11448314}
+            m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
 --- !u!114 &11464116
 MonoBehaviour:
@@ -806,6 +841,23 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 11406330}
           m_MethodName: HandleDrop
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11485606}
+            m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11406330}
+          m_MethodName: HandleClick
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 11485606}
@@ -952,6 +1004,23 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 11406330}
           m_MethodName: HandleDrop
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11457318}
+            m_ObjectArgumentAssemblyTypeName: InventorySlot, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11406330}
+          m_MethodName: HandleClick
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 11457318}
