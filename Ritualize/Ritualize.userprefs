@@ -2,15 +2,16 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DeathController.cs">
     <Files>
-      <File FileName="Assets\Scripts\shrinker.cs" Line="16" Column="15" />
+      <File FileName="Assets\Scripts\DeathController.cs" Line="65" Column="2" />
       <File FileName="Assets\Scripts\InputManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Shaders\OutlineOcclusion.shader" Line="1" Column="1" />
       <File FileName="Assets\Shaders\OutlineBumped.shader" Line="1" Column="1" />
       <File FileName="Assets\Shaders\OutlineDiffuse.shader" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Outliner.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PostProcess.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\DeathController.cs" Line="37" Column="4" />
-      <File FileName="Assets\Scripts\FXManager.cs" Line="14" Column="18" />
+      <File FileName="Assets\Scripts\FXManager.cs" Line="28" Column="13" />
+      <File FileName="Assets\fx.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Shrinker.cs" Line="19" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
