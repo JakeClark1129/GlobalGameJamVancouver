@@ -18,6 +18,8 @@ public class InventorySlot : MonoBehaviour
 
             if (Caption != null)
             {
+                Caption.enabled = true;
+
                 if (_Item != null)
                 {
                     Caption.text = _Item.Caption;
@@ -30,13 +32,21 @@ public class InventorySlot : MonoBehaviour
 
             if (Icon != null)
             {
-                if (_Item != null)
+                if (_Item != null &&
+                    _Item.Icon != null)
                 {
                     Icon.overrideSprite = _Item.Icon;
+                    Icon.enabled = true;
+
+                    if (Caption != null)
+                    {
+                        Caption.enabled = false;
+                    }
                 }
                 else
                 {
                     Icon.overrideSprite = null;
+                    Icon.enabled = false;
                 }
             }
         }

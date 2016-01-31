@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 8
   Caption: Charcoal
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: c44986c09d8cd4a4b92b8765327be0d9, type: 3}

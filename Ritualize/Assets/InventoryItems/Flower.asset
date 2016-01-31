@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 2
   Caption: Flower
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 9884b8417fa054443a87e8353829d01f, type: 3}
