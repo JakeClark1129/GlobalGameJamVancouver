@@ -18,8 +18,8 @@ public class Collectable : Interactable
         {
             Debug.Log("Object Collected: " + m_ItemType);
 
-			inventory.inventory |= m_ItemType;
-			Destroy(this.gameObject);
+            inventory.AddItem(m_ItemType);
+            Destroy(this.gameObject);
 
             // TODO: signal the UI inventory widget to update
 		}

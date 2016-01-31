@@ -25,6 +25,7 @@ public class Inventory : MonoBehaviour
 
     public int PlayerInventoryLimit = 5;
 
+    public GameObject[] Listeners;
     public InventoryItem[] ItemData;
 
     public bool HasItem(Items item)
@@ -35,6 +36,16 @@ public class Inventory : MonoBehaviour
     public bool IsFull()
     {
         return SparseBitcount((int) inventory) >= PlayerInventoryLimit;
+    }
+
+    public void AddItem(Items item)
+    {
+        inventory |= item;
+
+        foreach (GameObject listener in Listeners)
+        {
+            listener.SendMessage("HandleInventoryUpdated", this);
+        }
     }
 
     public InventoryItem GetItemData(Items ID)
