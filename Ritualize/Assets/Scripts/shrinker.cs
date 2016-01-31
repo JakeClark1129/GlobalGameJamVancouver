@@ -9,10 +9,10 @@ public class Shrinker : MonoBehaviour
 	{
 		shape = this.GetComponent<ParticleSystem>().shape;
 	}
-	
+
 	// Update is called once per frame
 	void Update () 
 	{
-		shape.radius -= Time.deltaTime;
+		shape.radius -= Time.deltaTime * 0.18f;
 	}
 }
