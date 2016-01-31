@@ -41,7 +41,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effects:
   - {fileID: 181908, guid: 7a3e44dca27076e43abe273d33c43554, type: 2}
-  - {fileID: 127202, guid: 2cb2fdfe21f99ec42a8fae544e0459a1, type: 2}
+  - {fileID: 179680, guid: 3dda4f9ac59e84b4b8b122ea4be60697, type: 2}
+  - {fileID: 179680, guid: e490a873655c29f40a324b03f397bb15, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

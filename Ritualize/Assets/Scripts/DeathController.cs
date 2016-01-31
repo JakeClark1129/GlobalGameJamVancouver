@@ -70,11 +70,5 @@ public class DeathController : MonoBehaviour
 	}
 
 
-	void OnCollisionEnter(Collision collision) 
-	{
-		if(collision.gameObject == charTrans.gameObject)
-		{
-			//Game Over
-		}
-	}
+
 }

@@ -13,6 +13,6 @@ public class Shrinker : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		shape.radius -= Time.deltaTime * 0.18f;
+		shape.radius -= Time.deltaTime * 0.2f;
 	}
 }
