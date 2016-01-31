@@ -25,14 +25,14 @@ public class DeathController : MonoBehaviour
 	void Update () 
 	{
 		spawnRadius = particle.shape.radius;
-		attackRadius = particle.shape.radius -  20 ;
+		attackRadius = particle.shape.radius -  40 ;
 
 		if (charTrans.position.magnitude > attackRadius)
 		{
 			Vector3 newPos = charTrans.position;
 			newPos.Normalize ();
 			newPos *= spawnRadius;
-			newPos.y = 1;
+			newPos.y = 2;
 			agent.Warp (newPos);
 			if(agent.isOnNavMesh)
 			{
@@ -43,12 +43,13 @@ public class DeathController : MonoBehaviour
 		else if (!teleported) 
 		{
 			FXManager.Instance.Spawn ("DeathDeath", transform.position, transform.rotation);
-			agent.Warp ((new Vector3 (1, 0, 1) * spawnRadius)  + new Vector3(0,1,0));
+			agent.Warp ((new Vector3 (1, 0, 1) * spawnRadius)  + new Vector3(0,2,0));
 			teleported = true;
 		}
 		else if (charTrans.position.magnitude < attackRadius) 
 		{
-			
+			Vector3 temp = charTrans.position; 
+			agent.SetDestination (temp.normalized * spawnRadius);
 		}
 	}
 

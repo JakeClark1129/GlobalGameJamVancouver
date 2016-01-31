@@ -45,6 +45,7 @@ GameObject:
   - 4: {fileID: 481058}
   - 114: {fileID: 11474274}
   - 143: {fileID: 14387534}
+  - 114: {fileID: 11470092}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -100,7 +101,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 148852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.64, y: 0, z: 1.017}
+  m_LocalPosition: {x: 6.51, y: 0, z: 5.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 442452}
@@ -201,6 +202,17 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107144}
   m_Enabled: 1
+--- !u!114 &11470092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3973236b0bc30af4ca6a64f896185f99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11474274
 MonoBehaviour:
   m_ObjectHideFlags: 1

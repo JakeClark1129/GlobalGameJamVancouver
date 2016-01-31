@@ -53,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181908}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 436552}
@@ -159,7 +159,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     startSpeed:
-      scalar: -3
+      scalar: -1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -427,15 +427,15 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
       minMaxState: 0
-    randomizeRotationDirection: 0
+    randomizeRotationDirection: 1
     gravityModifier: 0
-    maxNumParticles: 2000
+    maxNumParticles: 750
     rotation3D: 0
   ShapeModule:
     serializedVersion: 2
     enabled: 1
-    type: 3
-    radius: 300
+    type: 1
+    radius: 100
     angle: 25
     length: 5
     boxX: 1
@@ -456,7 +456,7 @@ ParticleSystem:
     serializedVersion: 2
     m_Type: 0
     rate:
-      scalar: 2000
+      scalar: 1000
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -490,11 +490,11 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
       minMaxState: 0
-    cnt0: 2000
+    cnt0: 750
     cnt1: 30
     cnt2: 30
     cnt3: 30
-    cntmax0: 2000
+    cntmax0: 750
     cntmax1: 30
     cntmax2: 30
     cntmax3: 30
@@ -788,7 +788,7 @@ ParticleSystem:
     cycles: 1
     randomRow: 1
   VelocityModule:
-    enabled: 1
+    enabled: 0
     x:
       scalar: -1
       maxCurve:
