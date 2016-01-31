@@ -5,11 +5,6 @@ public class Collectable : Interactable
 {
 	public Items m_ItemType;
 
-    private bool HasItem(Inventory inventory, Items item)
-    {
-        return (m_ItemType & inventory.inventory) == 0;
-    }
-
     public override void Interact(GameObject player)
 	{
 		Inventory inventory = player.GetComponent<Inventory>();

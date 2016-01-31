@@ -38,7 +38,7 @@ v2f vert(appdata v) {
 ENDCG
  
 	SubShader {
-		Tags { "Queue" = "Transparent" }
+		Tags { "Queue" = "Transparent" "RenderType"="Cutout"}
  
 		// note that a vertex shader is specified here but its using the one above
 		Pass {
@@ -87,11 +87,11 @@ ENDCG
 	}
  
 	SubShader {
-		Tags { "Queue" = "Transparent" }
+		Tags { "Queue" = "Transparent" "RenderType"="Cutout"}
  
 		Pass {
 			Name "OUTLINE"
-			Tags { "LightMode" = "Always" }
+			Tags { "LightMode" = "Always" "RenderType"="Cutout"}
 			Cull Front
 			ZWrite Off
 			ZTest Always

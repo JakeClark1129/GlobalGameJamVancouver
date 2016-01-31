@@ -52,6 +52,7 @@ public class Outliner : MonoBehaviour
 	{
 		if (targetObject) 
 		{
+			Debug.Log("item interacted: " + targetObject);
 			targetObject.GetComponent<Interactable>().Interact(charRef);
 		}
 	}
