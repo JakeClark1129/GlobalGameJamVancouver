@@ -1,0 +1,77 @@
+base: 0 0 0 0 0 0 1 1 1
+root ground: 0 0 0 0 0 0 1 1 1
+root hips: 0 0 0 0 0 0 1 1 1
+spine lower: 0 0 0 0 0 0 1 1 1
+spine upper: 0 0 0 0 0 0 1 1 1
+head neck lower: 0 0 0 0 0 0 1 1 1
+head neck upper: 0 0 0 0 0 0 1 1 1
+head jaw: 0 0 0 0 0 0 1 1 1
+head tongue: 0 0 0 0 0 0 1 1 1
+arm left shoulder 1: 0 0 0 0 0 0 1 1 1
+arm left shoulder 2: 0 0 0 0 0 0 1 1 1
+arm left elbow: 0 0 0 0 0 0 1 1 1
+arm left wrist: 0 0 0 0 0 0 1 1 1
+arm left finger a1: 0 0 0 0 0 0 1 1 1
+arm left finger a2: 0 0 0 0 0 0 1 1 1
+arm left finger a3: 0 0 0 0 0 0 1 1 1
+arm left finger b1: 0 0 0 0 0 0 1 1 1
+arm left finger b2: 0 0 0 0 0 0 1 1 1
+arm left finger b3: 0 0 0 0 0 0 1 1 1
+arm left finger c1: 0 0 0 0 0 0 1 1 1
+arm left finger c2: 0 0 0 0 0 0 1 1 1
+arm left finger c3: 0 0 0 0 0 0 1 1 1
+arm left finger d1: 0 0 0 0 0 0 1 1 1
+arm left finger d2: 0 0 0 0 0 0 1 1 1
+arm left finger d3: 0 0 0 0 0 0 1 1 1
+arm left finger e1: 0 0 0 0 0 0 1 1 1
+arm left finger e2: 0 0 0 0 0 0 1 1 1
+arm left finger e3: 0 0 0 0 0 0 1 1 1
+weapon left: 0 0 0 0 0 0 1 1 1
+arm right shoulder 1: 0 0 0 0 0 0 1 1 1
+arm right shoulder 2: 0 0 0 0 0 0 1 1 1
+arm right elbow: 0 0 0 0 0 0 1 1 1
+arm right wrist: 0 0 0 0 0 0 1 1 1
+armrightfinger a1: 0 0 0 0 0 0 1 1 1
+armrightfinger a2: 0 0 0 0 0 0 1 1 1
+armrightfinger a3: 0 0 0 0 0 0 1 1 1
+armrightfinger b1: 0 0 0 0 0 0 1 1 1
+armrightfinger b2: 0 0 0 0 0 0 1 1 1
+armrightfinger b3: 0 0 0 0 0 0 1 1 1
+armrightfinger c1: 0 0 0 0 0 0 1 1 1
+armrightfinger c2: 0 0 0 0 0 0 1 1 1
+armrightfinger c3: 0 0 0 0 0 0 1 1 1
+armrightfinger d1: 0 0 0 0 0 0 1 1 1
+armrightfinger d2: 0 0 0 0 0 0 1 1 1
+armrightfinger d3: 0 0 0 0 0 0 1 1 1
+armrightfinger e1: 0 0 0 0 0 0 1 1 1
+armrightfinger e2: 0 0 0 0 0 0 1 1 1
+armrightfinger e3: 0 0 0 0 0 0 1 1 1
+duplicate unused duplicate unused ready to delete duplicate 1: 0 0 0 0 0 0 1 1 1
+weapon right: 0 0 0 0 0 0 1 1 1
+pelvis: 0 0 0 0 0 0 1 1 1
+leg left thigh: 0 0 0 0 0 0 1 1 1
+leg left knee: 0 0 0 0 0 0 1 1 1
+leg left ankle: 0 0 0 0 0 0 1 1 1
+leg left toes: 0 0 0 0 0 0 1 1 1
+leg right thigh: 0 0 0 0 0 0 1 1 1
+leg right knee: 0 0 0 0 0 0 1 1 1
+leg right ankle: 0 0 0 0 0 0 1 1 1
+leg right toes: 0 0 0 0 0 0 1 1 1
+tail 0: 0 0 0 0 0 0 1 1 1
+tail 1: 0 0 0 0 0 0 1 1 1
+tail 2: 0 0 0 0 0 0 1 1 1
+tail 3: 0 0 0 0 0 0 1 1 1
+tail 4: 0 0 0 0 0 0 1 1 1
+tail 5: 0 0 0 0 0 0 1 1 1
+tail 6: 0 0 0 0 0 0 1 1 1
+tail 7: 0 0 0 0 0 0 1 1 1
+tail 8: 0 0 0 0 0 0 1 1 1
+tail 9: 0 0 0 0 0 0 1 1 1
+tail 10: 0 0 0 0 0 0 1 1 1
+tail 11: 0 0 0 0 0 0 1 1 1
+tail 12: 0 0 0 0 0 0 1 1 1
+tail 13: 0 0 0 0 0 0 1 1 1
+tail 14: 0 0 0 0 0 0 1 1 1
+tail 15: 0 0 0 0 0 0 1 1 1
+tail 16: 0 0 0 0 0 0 1 1 1
+tail 17: 0 0 0 0 0 0 1 1 1

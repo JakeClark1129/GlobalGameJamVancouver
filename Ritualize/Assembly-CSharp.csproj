@@ -66,6 +66,7 @@
      <None Include="Assets\Shaders\OutlineBumped.shader" />
      <None Include="Assets\Shaders\OutlineOcclusion.shader" />
      <None Include="Assets\Shaders\OutlineDiffuse.shader" />
+     <None Include="Assets\Models\DeathDemon\READ ME.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

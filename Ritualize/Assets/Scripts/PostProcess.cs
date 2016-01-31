@@ -7,12 +7,12 @@ public class PostProcess : MonoBehaviour
 	private MeshRenderer meshRenderer;
 	private bool outlined;
 
-	private Shader mainShader;
+	//private Shader mainShader;
 	// Use this for initialization
 	void Start () 
 	{
 		outlined = false;
-		mainShader = GetComponent<Shader> ();
+		//mainShader = GetComponent<Shader> ();
 		meshRenderer = GetComponent<MeshRenderer> ();
 	}
 
