@@ -13,15 +13,13 @@ public class Craftable : MonoBehaviour
 
 	public Items m_RequiredItems { get; private set; }
 
-	public bool Craft(Items inventory)
+	public bool Craft(Inventory inventory)
 	{
-		Items diff = inventory & m_RequiredItems;
-		if (diff == m_RequiredItems)
-		{
-			inventory ^= m_RequiredItems;//remove used items form inventory
-			inventory |= m_ItemType;//add crafted item to inventory
-			return true; //item is craftable
-		}
+        if (inventory.HasItem(m_RequiredItems))
+        {
+            inventory.AddItem(m_ItemType);
+            return true;
+        }
 		return false; //not all mats are owned
 	}
 
@@ -33,7 +31,4 @@ public class Craftable : MonoBehaviour
 			m_RequiredItems |= item;
 		}
 	}
-
-
-
 }

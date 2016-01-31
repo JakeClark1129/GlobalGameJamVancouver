@@ -20,8 +20,7 @@ public class CraftingPot : MonoBehaviour
 		{
 			if(craftable.m_RequiredItems == m_Ingredients)
 			{
-				Items inventory = player.GetComponent<Inventory>().inventory; 
-				craftable.Craft(inventory);
+				craftable.Craft(player.GetComponent<Inventory>());
 			}
 		}
 	}

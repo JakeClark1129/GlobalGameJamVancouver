@@ -33,7 +33,7 @@ public class Inventory : MonoBehaviour
 
     public bool HasItem(Items item)
     {
-        return (item & inventory) != 0;
+        return (item & inventory) == item;
     }
 
     public bool IsFull()
@@ -44,6 +44,16 @@ public class Inventory : MonoBehaviour
     public void AddItem(Items item)
     {
         inventory |= item;
+
+        foreach (GameObject listener in Listeners)
+        {
+            listener.SendMessage("HandleInventoryUpdated", this);
+        }
+    }
+
+    public void RemoveItem(Items item)
+    {
+        inventory ^= item;
 
         foreach (GameObject listener in Listeners)
         {
