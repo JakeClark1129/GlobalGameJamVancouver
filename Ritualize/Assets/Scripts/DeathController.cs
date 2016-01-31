@@ -34,6 +34,7 @@ public class DeathController : MonoBehaviour
 			newPos *= spawnRadius;
 			newPos.y = 2;
 			agent.Warp (newPos);
+
 			if(agent.isOnNavMesh)
 			{
 				agent.SetDestination (charTrans.position);
