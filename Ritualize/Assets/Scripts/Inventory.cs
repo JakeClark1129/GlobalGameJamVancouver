@@ -23,7 +23,19 @@ public class Inventory : MonoBehaviour
 {
     public Items inventory;
 
+    public int PlayerInventoryLimit = 5;
+
     public InventoryItem[] ItemData;
+
+    public bool HasItem(Items item)
+    {
+        return (item & inventory) != 0;
+    }
+
+    public bool IsFull()
+    {
+        return SparseBitcount((int) inventory) >= PlayerInventoryLimit;
+    }
 
     public InventoryItem GetItemData(Items ID)
     {
@@ -35,5 +47,17 @@ public class Inventory : MonoBehaviour
             }
         }
         return null;
+    }
+
+    // http://www.dotnetperls.com/bitcount
+    private static int SparseBitcount(int n)
+    {
+        int count = 0;
+        while (n != 0)
+        {
+            count++;
+            n &= (n - 1);
+        }
+        return count;
     }
 }

@@ -5,17 +5,23 @@ public class Collectable : Interactable
 {
 	public Items m_ItemType;
 
-	public override void Interact(GameObject player)
+    private bool HasItem(Inventory inventory, Items item)
+    {
+        return (m_ItemType & inventory.inventory) == 0;
+    }
+
+    public override void Interact(GameObject player)
 	{
 		Inventory inventory = player.GetComponent<Inventory>();
-		Items diff = m_ItemType & inventory.inventory;
-		if(diff == 0)//if this object is not already in their inventory
-		{
-			Debug.Log("Object Collected");
-			//AND the inventory is not full
-			//TODO: add this item to the inventory
+        if (!inventory.HasItem(m_ItemType) &&
+            !inventory.IsFull())
+        {
+            Debug.Log("Object Collected: " + m_ItemType);
+
 			inventory.inventory |= m_ItemType;
 			Destroy(this.gameObject);
+
+            // TODO: signal the UI inventory widget to update
 		}
 	}
 }
