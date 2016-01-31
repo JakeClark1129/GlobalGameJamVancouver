@@ -1,12 +1,19 @@
 ﻿
 using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class InventoryUI : MonoBehaviour
 {
     public InventorySlot[] Slots;
 
     private int _NextSlotIndex = 0;
+
+    public InventoryItem SelectedItem
+    {
+        get;
+        private set;
+    }
 
     public void HandleInventoryUpdated(Inventory inventory)
     {
@@ -20,6 +27,11 @@ public class InventoryUI : MonoBehaviour
                 AssignSlot(inventory.GetItemData(item));
             }
         }
+    }
+
+    public void HandleBeginDrag(InventorySlot slot)
+    {
+        SelectedItem = slot.Item;
     }
 
     private void ClearSlots()
