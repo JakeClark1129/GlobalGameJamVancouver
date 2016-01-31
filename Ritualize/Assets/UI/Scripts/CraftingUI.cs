@@ -57,7 +57,11 @@ public class CraftingUI : MonoBehaviour
 
         foreach (InventorySlot slot in Slots)
         {
-            m_CraftingPot.AddIngredient(slot.Item.ID);
+            if (slot != null &&
+                slot.Item != null)
+            {
+                m_CraftingPot.AddIngredient(slot.Item.ID);
+            }
         }
 
         if (m_CraftingPot.Craft())

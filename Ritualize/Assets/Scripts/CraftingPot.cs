@@ -21,6 +21,11 @@ public class CraftingPot : MonoBehaviour
         m_Ingredients = 0;
     }
 
+    public bool HasItem(Items item)
+    {
+        return (item & m_Ingredients) == item;
+    }
+
     public bool Craft()
     {
         Inventory inventory = Player.GetComponent<Inventory>();
@@ -31,7 +36,7 @@ public class CraftingPot : MonoBehaviour
 
         foreach (Craftable craftable in m_craftables)
         {
-            if (craftable.m_RequiredItems == m_Ingredients)
+            if (HasItem(craftable.m_RequiredItems))
             {
                 return craftable.Craft(inventory);
             }
