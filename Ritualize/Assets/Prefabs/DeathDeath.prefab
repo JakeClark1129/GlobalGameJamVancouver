@@ -77,7 +77,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127202}
   serializedVersion: 2
-  lengthInSec: 0.1
+  lengthInSec: 1
   startDelay:
     scalar: 0
     maxCurve:
@@ -124,7 +124,7 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     startLifetime:
-      scalar: 0.1
+      scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -288,7 +288,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: 1
+      scalar: 5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1673,15 +1673,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: lengthInSec
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: InitialModule.startSize.scalar
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
+      propertyPath: InitialModule.startSize.scalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: playOnAwake

@@ -7,12 +7,12 @@ public class PostProcess : MonoBehaviour
 	private MeshRenderer meshRenderer;
 	private bool outlined;
 
-	private Shader mainShader;
+	//private Shader mainShader;
 	// Use this for initialization
 	void Start () 
 	{
 		outlined = false;
-		mainShader = GetComponent<Shader> ();
+		//mainShader = GetComponent<Shader> ();
 		meshRenderer = GetComponent<MeshRenderer> ();
 	}
 
@@ -29,7 +29,8 @@ public class PostProcess : MonoBehaviour
 			meshRenderer.material.shader = Shader.Find("Legacy Shaders/Transparent/Cutout/Diffuse");
 			meshRenderer.material.SetInt ("_Mode",1 );
 			outlined = false;
-		} else 
+		} 
+		else 
 		{
 			meshRenderer.material.shader = Shader.Find("Outlined/Silhouetted Bumped Diffuse");
 			meshRenderer.material.SetInt ("_Mode",1 );

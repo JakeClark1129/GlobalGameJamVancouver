@@ -3,13 +3,13 @@ using System.Collections;
 
 public class RitualCircle : MonoBehaviour {
 
-	Craftable objectA;
-	Craftable objectB;
-	Craftable objectC;
+	Craftable objectA = null;
+	Craftable objectB = null;
+	Craftable objectC = null;
 
-	Collectable[] A;
-	Collectable[] B;
-	Collectable[] C;
+	Collectable[] A = null;
+	Collectable[] B = null;
+	Collectable[] C = null;
 
 	/*
 	 * A[0] must match C[2]

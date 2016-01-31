@@ -2,11 +2,9 @@
 Shader "Outlined/Silhouetted Diffuse" {
 	Properties {
 		_Color ("Main Color", Color) = (.5,.5,.5,1)
-		_Mode ("Mode", float) = (0.0f)
 		_OutlineColor ("Outline Color", Color) = (0,0,0,1)
 		_Outline ("Outline width", Range (0.0, 0.03)) = .005
 		_MainTex ("Base (RGB)", 2D) = "white" { }
-		_Fallback ("Fallback", string)
 	}
  
 CGINCLUDE
@@ -35,7 +33,6 @@ v2f vert(appdata v) {
  
 	o.pos.xy += offset * o.pos.z * _Outline;
 	o.color = _OutlineColor;
-	mode = _Mode;
 	return o;
 }
 ENDCG
@@ -48,7 +45,6 @@ ENDCG
 			Name "OUTLINE"
 			Tags { "LightMode" = "Always" }
 			Cull Off
-			mode = _Mode
 			ZWrite Off
 			ZTest Always
 			ColorMask RGB // alpha not used

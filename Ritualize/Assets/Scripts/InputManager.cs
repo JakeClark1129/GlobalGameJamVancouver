@@ -48,12 +48,14 @@ public class InputManager : MonoBehaviour
 
 		movementY += Physics.gravity.y * Time.deltaTime*2;
 		movement.y = movementY;
+
 		controller.Move(movement * Time.deltaTime);
 
 		if (Input.GetKeyDown(KeyCode.E) ||
             Input.GetMouseButtonDown(0) )
 		{
-			outliner.Interact(); 
+			if(outliner)
+				outliner.Interact(); 
 		}
 
 		//rb.MovePosition (movement);

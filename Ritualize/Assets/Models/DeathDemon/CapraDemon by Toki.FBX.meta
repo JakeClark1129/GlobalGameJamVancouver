@@ -1,0 +1,296 @@
+fileFormatVersion: 2
+guid: ca524d043337f5e4d950d65297003cbf
+timeCreated: 1454229872
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: arm left elbow
+    100002: arm left finger a1
+    100004: arm left finger a2
+    100006: arm left finger a3
+    100008: arm left finger b1
+    100010: arm left finger b2
+    100012: arm left finger b3
+    100014: arm left finger c1
+    100016: arm left finger c2
+    100018: arm left finger c3
+    100020: arm left finger d1
+    100022: arm left finger d2
+    100024: arm left finger d3
+    100026: arm left finger e1
+    100028: arm left finger e2
+    100030: arm left finger e3
+    100032: arm left shoulder 1
+    100034: arm left shoulder 2
+    100036: arm left wrist
+    100038: arm right elbow
+    100040: arm right shoulder 1
+    100042: arm right shoulder 2
+    100044: arm right wrist
+    100046: armrightfinger a1
+    100048: armrightfinger a2
+    100050: armrightfinger a3
+    100052: armrightfinger b1
+    100054: armrightfinger b2
+    100056: armrightfinger b3
+    100058: armrightfinger c1
+    100060: armrightfinger c2
+    100062: armrightfinger c3
+    100064: armrightfinger d1
+    100066: armrightfinger d2
+    100068: armrightfinger d3
+    100070: armrightfinger e1
+    100072: armrightfinger e2
+    100074: armrightfinger e3
+    100076: base
+    100078: //RootNode
+    100080: head jaw
+    100082: head neck lower
+    100084: head neck upper
+    100086: head tongue
+    100088: leg left ankle
+    100090: leg left knee
+    100092: leg left thigh
+    100094: leg left toes
+    100096: leg right ankle
+    100098: leg right knee
+    100100: leg right thigh
+    100102: leg right toes
+    100104: Object01
+    100106: pelvis
+    100108: root ground
+    100110: spine lower
+    100112: spine upper
+    100114: tail 0
+    100116: tail 1
+    100118: tail 10
+    100120: tail 11
+    100122: tail 12
+    100124: tail 13
+    100126: tail 14
+    100128: tail 15
+    100130: tail 16
+    100132: tail 17
+    100134: tail 2
+    100136: tail 3
+    100138: tail 4
+    100140: tail 5
+    100142: tail 6
+    100144: tail 7
+    100146: tail 8
+    100148: tail 9
+    100150: unused duplicate unused ready to delete duplicate 1
+    100152: unused duplicate unused ready to delete duplicate 1 1
+    100154: unused ready to delete ?????????h?j??
+    100156: unused ready to delete ?????w??
+    100158: unused ready to delete ???e?w??
+    100160: unused ready to delete ???l?w??
+    100162: unused ready to delete ?E???????h?j??
+    100164: unused ready to delete ?E???w??
+    100166: unused ready to delete ?E?e?w??
+    100168: unused ready to delete ?E?l?w??
+    100170: unused ready to delete arm left wrist_tail
+    100172: unused ready to delete arm right wrist_tai
+    100174: unused ready to delete duplicate ?????w??
+    100176: unused ready to delete duplicate ?E???w??
+    100178: unused ready to delete head jaw_tail
+    100180: unused ready to delete head neck upper_tai
+    100182: unused ready to delete head tongue_tail
+    100184: unused ready to delete pelvis_tail
+    100186: unused ready to delete root hips
+    100188: unused ready to delete root hips_tail
+    100190: unused ready to delete tail 10_tail
+    100192: unused ready to delete tail 17_tail
+    100194: unused ready to delete tail 1_tail
+    100196: unused ready to delete tail 2_tail
+    100198: unused ready to delete tail 3_tail
+    100200: unused ready to delete tail 4_tail
+    100202: unused ready to delete tail 5_tail
+    100204: unused ready to delete tail 6_tail
+    100206: unused ready to delete tail 7_tail
+    100208: unused ready to delete tail 8_tail
+    100210: unused ready to delete tail 9_tail
+    100212: unused ready to delete tail0_tai
+    100214: unused ready to delete weapon left_tail
+    100216: unused ready to delete weapon right_tail
+    100218: weapon left
+    100220: weapon right
+    400000: arm left elbow
+    400002: arm left finger a1
+    400004: arm left finger a2
+    400006: arm left finger a3
+    400008: arm left finger b1
+    400010: arm left finger b2
+    400012: arm left finger b3
+    400014: arm left finger c1
+    400016: arm left finger c2
+    400018: arm left finger c3
+    400020: arm left finger d1
+    400022: arm left finger d2
+    400024: arm left finger d3
+    400026: arm left finger e1
+    400028: arm left finger e2
+    400030: arm left finger e3
+    400032: arm left shoulder 1
+    400034: arm left shoulder 2
+    400036: arm left wrist
+    400038: arm right elbow
+    400040: arm right shoulder 1
+    400042: arm right shoulder 2
+    400044: arm right wrist
+    400046: armrightfinger a1
+    400048: armrightfinger a2
+    400050: armrightfinger a3
+    400052: armrightfinger b1
+    400054: armrightfinger b2
+    400056: armrightfinger b3
+    400058: armrightfinger c1
+    400060: armrightfinger c2
+    400062: armrightfinger c3
+    400064: armrightfinger d1
+    400066: armrightfinger d2
+    400068: armrightfinger d3
+    400070: armrightfinger e1
+    400072: armrightfinger e2
+    400074: armrightfinger e3
+    400076: base
+    400078: //RootNode
+    400080: head jaw
+    400082: head neck lower
+    400084: head neck upper
+    400086: head tongue
+    400088: leg left ankle
+    400090: leg left knee
+    400092: leg left thigh
+    400094: leg left toes
+    400096: leg right ankle
+    400098: leg right knee
+    400100: leg right thigh
+    400102: leg right toes
+    400104: Object01
+    400106: pelvis
+    400108: root ground
+    400110: spine lower
+    400112: spine upper
+    400114: tail 0
+    400116: tail 1
+    400118: tail 10
+    400120: tail 11
+    400122: tail 12
+    400124: tail 13
+    400126: tail 14
+    400128: tail 15
+    400130: tail 16
+    400132: tail 17
+    400134: tail 2
+    400136: tail 3
+    400138: tail 4
+    400140: tail 5
+    400142: tail 6
+    400144: tail 7
+    400146: tail 8
+    400148: tail 9
+    400150: unused duplicate unused ready to delete duplicate 1
+    400152: unused duplicate unused ready to delete duplicate 1 1
+    400154: unused ready to delete ?????????h?j??
+    400156: unused ready to delete ?????w??
+    400158: unused ready to delete ???e?w??
+    400160: unused ready to delete ???l?w??
+    400162: unused ready to delete ?E???????h?j??
+    400164: unused ready to delete ?E???w??
+    400166: unused ready to delete ?E?e?w??
+    400168: unused ready to delete ?E?l?w??
+    400170: unused ready to delete arm left wrist_tail
+    400172: unused ready to delete arm right wrist_tai
+    400174: unused ready to delete duplicate ?????w??
+    400176: unused ready to delete duplicate ?E???w??
+    400178: unused ready to delete head jaw_tail
+    400180: unused ready to delete head neck upper_tai
+    400182: unused ready to delete head tongue_tail
+    400184: unused ready to delete pelvis_tail
+    400186: unused ready to delete root hips
+    400188: unused ready to delete root hips_tail
+    400190: unused ready to delete tail 10_tail
+    400192: unused ready to delete tail 17_tail
+    400194: unused ready to delete tail 1_tail
+    400196: unused ready to delete tail 2_tail
+    400198: unused ready to delete tail 3_tail
+    400200: unused ready to delete tail 4_tail
+    400202: unused ready to delete tail 5_tail
+    400204: unused ready to delete tail 6_tail
+    400206: unused ready to delete tail 7_tail
+    400208: unused ready to delete tail 8_tail
+    400210: unused ready to delete tail 9_tail
+    400212: unused ready to delete tail0_tai
+    400214: unused ready to delete weapon left_tail
+    400216: unused ready to delete weapon right_tail
+    400218: weapon left
+    400220: weapon right
+    4300000: Object01
+    9500000: //RootNode
+    13700000: Object01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

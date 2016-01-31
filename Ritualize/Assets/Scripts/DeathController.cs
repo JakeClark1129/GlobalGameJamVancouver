@@ -24,28 +24,32 @@ public class DeathController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		spawnRadius = particle.shape.radius - 10;
-		attackRadius = particle.shape.radius -  30 ;
+		spawnRadius = particle.shape.radius;
+		attackRadius = particle.shape.radius -  40 ;
 
 		if (charTrans.position.magnitude > attackRadius)
 		{
 			Vector3 newPos = charTrans.position;
 			newPos.Normalize ();
-			newPos.y = 0;
 			newPos *= spawnRadius;
+			newPos.y = 2;
 			agent.Warp (newPos);
-			//agent.SetDestination (charTrans.position);
+			if(agent.isOnNavMesh)
+			{
+				agent.SetDestination (charTrans.position);
+			}
 			teleported = false;
 		}
 		else if (!teleported) 
 		{
 			FXManager.Instance.Spawn ("DeathDeath", transform.position, transform.rotation);
-			agent.Warp (new Vector3 (1, 0, 1) * spawnRadius);
+			agent.Warp ((new Vector3 (1, 0, 1) * spawnRadius)  + new Vector3(0,2,0));
 			teleported = true;
 		}
 		else if (charTrans.position.magnitude < attackRadius) 
 		{
-			
+			Vector3 temp = charTrans.position; 
+			agent.SetDestination (temp.normalized * spawnRadius);
 		}
 	}
 
