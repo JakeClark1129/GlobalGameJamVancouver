@@ -12,7 +12,7 @@ public class PostProcess : MonoBehaviour
 		outlined = false;
 		meshRenderer = GetComponent<MeshRenderer> ();
 	}
-	
+
 	// Update is called once per frame
 	void Update () 
 	{
@@ -28,6 +28,8 @@ public class PostProcess : MonoBehaviour
 		} else 
 		{
 			meshRenderer.material.shader = Shader.Find("Outlined/Silhouetted Bumped Diffuse");
+			meshRenderer.material.SetColor ("_OutlineColor", Color.red);
+			//meshRenderer.material.SetFloat ("_Outline", 0.05f);
 			outlined = true;
 		}
 

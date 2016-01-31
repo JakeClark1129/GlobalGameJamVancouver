@@ -19,6 +19,8 @@ public class InputManager : MonoBehaviour
     public float CameraMaxTilt = 45f;
     private float cameraRotateX = 0f;
 
+	private float movementY = 0;
+
 	private void Start()
 	{
 		controller = GetComponent<CharacterController> ();
@@ -34,14 +36,18 @@ public class InputManager : MonoBehaviour
 		movement *= 0;
 
 
-		movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-		movement = transform.TransformDirection(movement);
+		movement = new Vector3 (Input.GetAxis ("Horizontal"), 0, Input.GetAxis ("Vertical"));
+		movement = transform.TransformDirection (movement);
 		movement *= moveSpeed;
-		if (Input.GetButton("Jump"))
-			movement.y = jumpSpeed;
-		
 
-		movement += Physics.gravity * Time.deltaTime * 10;
+		if (controller.isGrounded ) 
+		{
+			if (Input.GetButtonDown ("Jump"))
+				movementY = jumpSpeed ;
+		}
+
+		movementY += Physics.gravity.y * Time.deltaTime*2;
+		movement.y = movementY;
 		controller.Move(movement * Time.deltaTime);
 
 		if (Input.GetKeyDown(KeyCode.E) ||
