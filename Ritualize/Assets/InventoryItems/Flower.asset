@@ -13,4 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 2
   Caption: Flower
-  Icon: {fileID: 0}
+  RolloverCaption: 
+  Icon: {fileID: 21300000, guid: 36e13e79e1feec446a71136b766d02f5, type: 3}

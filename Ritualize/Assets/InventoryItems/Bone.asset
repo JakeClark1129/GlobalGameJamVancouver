@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82f8c7dcff3f91744ac009529a8f37cb, type: 3}
-  m_Name: Soul Snatcher
+  m_Name: Bone
   m_EditorClassIdentifier: 
-  ID: 1024
-  Caption: Soul Snatcher
+  ID: 32
+  Caption: Bone
   RolloverCaption: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: a78ac51be3ba1c74dbb2de7506212891, type: 3}
