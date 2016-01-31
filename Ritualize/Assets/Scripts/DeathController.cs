@@ -18,34 +18,43 @@ public class DeathController : MonoBehaviour
 	{
 		agent = GetComponent<NavMeshAgent> ();
 		spawnRadius = particle.shape.radius;
-		attackRadius = particle.shape.radius -  40 ;
+		attackRadius = particle.shape.radius -  20 ;
 	}
 		
 	// Update is called once per frame
 	void Update () 
 	{
-		spawnRadius = particle.shape.radius;
-		attackRadius = particle.shape.radius -  50 ;
+		spawnRadius = particle.shape.radius - 10;
+		attackRadius = particle.shape.radius -  30 ;
 
 		if (charTrans.position.magnitude > attackRadius)
 		{
 			Vector3 newPos = charTrans.position;
 			newPos.Normalize ();
+			newPos.y = 0;
 			newPos *= spawnRadius;
-			agent.Move (newPos);
-			agent.SetDestination (charTrans.position);
-
+			agent.Warp (newPos);
+			//agent.SetDestination (charTrans.position);
+			teleported = false;
 		}
 		else if (!teleported) 
 		{
 			FXManager.Instance.Spawn ("DeathDeath", transform.position, transform.rotation);
-			agent.Move (new Vector3 (1, 0, 1) * spawnRadius);
+			agent.Warp (new Vector3 (1, 0, 1) * spawnRadius);
 			teleported = true;
 		}
 		else if (charTrans.position.magnitude < attackRadius) 
 		{
-			teleported = false;
+			
 		}
+	}
 
+
+	void OnCollisionEnter(Collision collision) 
+	{
+		if(collision.gameObject == charTrans.gameObject)
+		{
+			//Game Over
+		}
 	}
 }

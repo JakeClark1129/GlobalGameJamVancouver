@@ -6,10 +6,13 @@ public class PostProcess : MonoBehaviour
 
 	private MeshRenderer meshRenderer;
 	private bool outlined;
+
+	private Shader mainShader;
 	// Use this for initialization
 	void Start () 
 	{
 		outlined = false;
+		mainShader = GetComponent<Shader> ();
 		meshRenderer = GetComponent<MeshRenderer> ();
 	}
 
@@ -24,10 +27,12 @@ public class PostProcess : MonoBehaviour
 		if (outlined) 
 		{
 			meshRenderer.material.shader = Shader.Find("Diffuse");
+			meshRenderer.material.SetInt ("_Mode",1 );
 			outlined = false;
 		} else 
 		{
 			meshRenderer.material.shader = Shader.Find("Outlined/Silhouetted Bumped Diffuse");
+			meshRenderer.material.SetInt ("_Mode",1 );
 			meshRenderer.material.SetColor ("_OutlineColor", Color.red);
 			//meshRenderer.material.SetFloat ("_Outline", 0.05f);
 			outlined = true;

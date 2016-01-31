@@ -21,7 +21,7 @@ public class Outliner : MonoBehaviour
 		Vector3 to = charCam.transform.forward;
 		RaycastHit hit = new RaycastHit();
 		LayerMask mask = 1<<LayerMask.NameToLayer ("Interactable");
-		bool hits = Physics.Raycast (from, to,out hit ,10000, mask);
+		bool hits = Physics.Raycast (from, to,out hit ,400, mask);
 
 		if (hits) 
 		{
