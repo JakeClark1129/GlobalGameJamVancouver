@@ -6,6 +6,7 @@ public class InventorySlot : MonoBehaviour
 {
     public Text Caption;
     public Image Icon;
+    public string EmptyCaption = "Empty";
 
     public RolloverUI Rollover;
 
@@ -28,7 +29,7 @@ public class InventorySlot : MonoBehaviour
                 }
                 else
                 {
-                    Caption.text = "Empty";
+                    Caption.text = EmptyCaption;
                 }
             }
 

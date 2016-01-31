@@ -21,7 +21,8 @@ public class CraftingUI : MonoBehaviour
     {
         foreach (InventorySlot slot in Slots)
         {
-            if (slot.Item.ID == item)
+            if (slot.Item != null &&
+                slot.Item.ID == item)
             {
                 return true;
             }

@@ -49,10 +49,4 @@ public class InventoryUI : MonoBehaviour
         Slots[_NextSlotIndex].Item = item;
         _NextSlotIndex++;
     }
-
-    // TODO: need this method?
-    public void HandleAlchemyCircleEnabled(AlchemyCircleUI alchemyCircle)
-    {
-
-    }
 }
