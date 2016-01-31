@@ -70,6 +70,7 @@ public class Inventory : MonoBehaviour
                 return item;
             }
         }
+        Debug.LogWarning("inventory item data (character inventory component) not found for " + ID);
         return null;
     }
 

@@ -216,8 +216,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: 0
   PlayerInventoryLimit: 5
-  Listeners: []
-  ItemData: []
+  Listeners:
+  - {fileID: 0}
+  ItemData:
+  - {fileID: 11400000, guid: 0253af8433ea5a94aa15b2c9a7b87080, type: 2}
+  - {fileID: 11400000, guid: e29866df4f4dac34abdddac75c8e46a3, type: 2}
+  - {fileID: 11400000, guid: 59df0cce30be50d40b214765648b3fbf, type: 2}
+  - {fileID: 11400000, guid: eb1b926472246774bb5c3c7f52acca09, type: 2}
+  - {fileID: 11400000, guid: d91be29d6e8a7664697b6a449e737a0e, type: 2}
+  - {fileID: 11400000, guid: 96339d96bb19ed84e8fef95ef9e2e13a, type: 2}
+  - {fileID: 11400000, guid: 26c69e3f0be20e6459a39823db56273e, type: 2}
+  - {fileID: 11400000, guid: 1374af9c6728ce84e9e56f9f36924dd8, type: 2}
 --- !u!114 &11440756
 MonoBehaviour:
   m_ObjectHideFlags: 1
