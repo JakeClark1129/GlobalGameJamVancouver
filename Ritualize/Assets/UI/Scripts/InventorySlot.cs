@@ -7,6 +7,8 @@ public class InventorySlot : MonoBehaviour
     public Text Caption;
     public Image Icon;
 
+    public RolloverUI Rollover;
+
     private InventoryItem _Item;
     public InventoryItem Item
     {
@@ -49,6 +51,14 @@ public class InventorySlot : MonoBehaviour
                     Icon.enabled = false;
                 }
             }
+        }
+    }
+
+    public void HandlePointerEnter()
+    {
+        if (Rollover != null)
+        {
+            Rollover.ShowCaption("testing");
         }
     }
 }
