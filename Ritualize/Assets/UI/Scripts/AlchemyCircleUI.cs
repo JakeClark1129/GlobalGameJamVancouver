@@ -4,18 +4,50 @@ using UnityEngine.UI;
 
 public class AlchemyCircleUI : MonoBehaviour
 {
-    public InventoryUI _InventoryUI;
+    public InventoryUI Inventory;
 
-    private void OnEnable()
+    public InventorySlot[] Slots;
+
+    private void Start()
     {
-        if (_InventoryUI != null)
+        foreach (InventorySlot slot in Slots)
         {
-            _InventoryUI.HandleAlchemyCircleEnabled(this);
+            slot.EmptyCaption = "";
+            slot.Item = null; // force caption refresh
         }
     }
 
-    public void HandleButtonClick(Button button)
+    private bool HasItem(Items item)
     {
-        Debug.Log("button was clicked: " + button);
+        foreach (InventorySlot slot in Slots)
+        {
+            if (slot.Item != null &&
+                slot.Item.ID == item)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void HandleDrop(InventorySlot slot)
+    {
+        if (Inventory == null)
+        {
+            Debug.LogError("AlchemyCircleUI has no Inventory reference");
+            return;
+        }
+
+        if (Inventory.SelectedItem != null &&
+            !HasItem(Inventory.SelectedItem.ID))
+        {
+            slot.Item = Inventory.SelectedItem;
+            Inventory.SelectedItem = null;
+        }
+    }
+
+    public void HandleClick(InventorySlot slot)
+    {
+        slot.Item = null;
     }
 }

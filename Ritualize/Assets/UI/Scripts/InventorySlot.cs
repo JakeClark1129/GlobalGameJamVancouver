@@ -11,7 +11,6 @@ public class InventorySlot : MonoBehaviour
     public RolloverUI Rollover;
 
     private InventoryItem _Item;
-
     public InventoryItem Item
     {
         get { return _Item; }
@@ -61,7 +60,7 @@ public class InventorySlot : MonoBehaviour
         if (Rollover != null &&
             Item != null)
         {
-            Rollover.ShowCaption(Item.Caption);
+            Rollover.ShowCaption(Item.RolloverCaption);
         }
     }
 }
