@@ -4,24 +4,39 @@ using System.Collections.Generic;
 
 public class CraftingPot : MonoBehaviour
 {
-	Items m_Ingredients;
+    public GameObject Player;
+
+	public Items m_Ingredients;
 
 	[SerializeField]
 	Craftable[] m_craftables;
 
-	void AddIngredient(Items ingredient)
+	public void AddIngredient(Items ingredient)
 	{
 		m_Ingredients |= ingredient;
 	}
 
-	void Craft(GameObject player)
+    public void Clear()
+    {
+        m_Ingredients = 0;
+    }
+
+	public bool Craft()
 	{
-		foreach( Craftable craftable in m_craftables)
+        Inventory inventory = Player.GetComponent<Inventory>();
+        if (!inventory)
+        {
+            return false;
+        }
+
+        foreach ( Craftable craftable in m_craftables)
 		{
 			if(craftable.m_RequiredItems == m_Ingredients)
 			{
-				craftable.Craft(player.GetComponent<Inventory>());
+				return craftable.Craft(inventory);
 			}
 		}
+
+        return false;
 	}
 }

@@ -5,8 +5,17 @@ using UnityEngine.EventSystems;
 public class CraftingUI : MonoBehaviour
 {
     public InventoryUI Inventory;
+    public CraftingPot m_CraftingPot;
 
     public InventorySlot[] Slots;
+
+    public void Clear()
+    {
+        foreach (InventorySlot slot in Slots)
+        {
+            slot.Item = null;
+        }
+    }
 
     private bool HasItem(Items item)
     {
@@ -39,5 +48,20 @@ public class CraftingUI : MonoBehaviour
     public void HandleClick(InventorySlot slot)
     {
         slot.Item = null;
+    }
+
+    public void Craft()
+    {
+        m_CraftingPot.Clear();
+
+        foreach (InventorySlot slot in Slots)
+        {
+            m_CraftingPot.AddIngredient(slot.Item.ID);
+        }
+
+        if (m_CraftingPot.Craft())
+        {
+            Clear();
+        }
     }
 }
